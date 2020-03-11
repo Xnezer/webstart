@@ -358,7 +358,7 @@ template {
   margin-right: 45px; }
 
 .button {
-  padding: 9px 20px;
+  padding: 11px 24px;
   border: 0;
   border-radius: 2px;
   text-transform: uppercase;
@@ -403,6 +403,8 @@ template {
     top: 0;
     height: 100vh; }
   .hero__scroll-down {
+    font-family: 'Yeseva One', sans-serif;
+    font-size: 0.85rem;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -422,7 +424,7 @@ template {
       height: 30px;
       border: 2px solid #E3B873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 18px; }
   .hero__text {
     font-size: 1.57rem;
     max-width: 500px;
@@ -431,7 +433,7 @@ template {
     margin-bottom: 3.5rem; }
   .hero__button {
     margin-right: 20px;
-    padding: 15px 25px; }
+    padding: 18px 32px; }
 
 .instagram {
   display: flex;
@@ -465,7 +467,7 @@ template {
     color: #E3B873; }
 
 .button--outline {
-  padding: 15px 37px; }
+  padding: 18px 45px; }
 
 *, *:before, *:after {
   box-sizing: border-box; }
