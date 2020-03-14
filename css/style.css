@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/subset-FuturaBookC.woff2") format("woff");
@@ -608,14 +609,45 @@ img {
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: 24.14rem; }
   .hero__text {
     font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2.28rem;
+    line-height: 2rem; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.84rem; } }
+    min-width: 28rem;
+    margin-bottom: 1.84rem; }
+  .hero__title {
+    margin-bottom: 1.5rem; } }
+
+/* Для секций */
+@media screen and (max-width: 570px) {
+  .section__subtitle {
+    max-width: 21.71rem;
+    line-height: 1.5rem; }
+  .section-title__heading {
+    font-size: 1.75rem; }
+  .types__card {
+    margin-bottom: 6.35rem; }
+  .design__card {
+    margin-bottom: 5.85rem; }
+  .card {
+    min-width: 28rem; }
+    .card__text {
+      margin-top: -12rem;
+      max-width: 22rem; }
+      .card__text ul .after-element:after {
+        content: '...'; }
+      .card__text ul li:nth-child(n+8) {
+        display: none; }
+    .card__text-design {
+      margin-top: -12rem;
+      max-width: 22rem; }
+    .card__pricetag {
+      padding: 0.9rem 2.6rem; }
+    .card__pricetag--big {
+      padding: 0.9rem 3.8rem; } }
 
 @media screen and (max-height: 545px) {
   .hero__scroll-down {
