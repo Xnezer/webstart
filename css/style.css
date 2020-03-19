@@ -389,9 +389,6 @@ template {
   align-items: flex-start;
   justify-content: space-between; }
 
-.col-30 {
-  flex-basis: 32%; }
-
 .col-50 {
   width: 50%; }
 
@@ -454,8 +451,7 @@ img {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0;
-  margin-left: 0.5rem; }
+  padding: 24px 0; }
 
 .menu {
   display: flex;
@@ -595,7 +591,8 @@ img {
   padding: 18px 45px; }
 
 .types__section-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  font-size: 0.95rem; }
 
 .card__text {
   position: relative;
@@ -631,6 +628,9 @@ img {
   color: #fff;
   padding: 1.214rem 2.6rem; }
 
+.section-title__heading {
+  font-size: 1.4rem; }
+
 .section__subtitle {
   font-family: 'Futura Book', sans-serif;
   font-size: 1.42rem;
@@ -640,6 +640,12 @@ img {
   margin: 0 auto;
   margin-top: 1.23rem;
   margin-bottom: 3.29rem; }
+
+.design {
+  background: linear-gradient(transparent 52.5%, #131313 52.5%); }
+
+.card__title {
+  color: #131313; }
 
 .card__pricetag--big {
   padding: 1.3rem 5.5rem 1.3rem 2.37rem; }
@@ -847,7 +853,26 @@ img {
     .card__pricetag--big {
       padding: 0.9rem 3.8rem; }
   .col-30 {
+    flex-basis: 32%;
     margin-bottom: -0.6rem; } }
+
+@media screen and (max-width: 570px) {
+  .section {
+    background-color: #131313;
+    color: #fff; }
+    .section__subtitle {
+      max-width: 25rem;
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      margin-bottom: 0;
+      margin-bottom: 2.15rem; }
+  .design__card {
+    margin-bottom: 6.2rem; }
+  .card__list {
+    margin-bottom: 1.4rem; }
+  .card__text-design {
+    margin-top: -11.8rem;
+    max-width: 22.45rem; } }
 
 @media screen and (max-width: 370px) {
   .hero__button {

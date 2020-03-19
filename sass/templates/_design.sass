@@ -1,4 +1,6 @@
 .section
+  &-title__heading
+    font-size: 1.4rem
   &__subtitle
     font-family: 'Futura Book', sans-serif
     font-size: 1.42rem
@@ -8,9 +10,14 @@
     margin: 0 auto
     margin-top: 1.23rem
     margin-bottom: 3.29rem
+.design
+  background: linear-gradient(transparent 52.5%, $dark 52.5%)
 .card
+  &__title
+    color: $dark
   &__pricetag--big
     padding: 1.3rem 5.5rem 1.3rem 2.37rem
+
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
