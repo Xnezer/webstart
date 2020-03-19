@@ -454,7 +454,8 @@ img {
   width: 100%;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 24px 0;
+  margin-left: 0.5rem; }
 
 .menu {
   display: flex;
@@ -509,10 +510,10 @@ img {
     left: 0;
     right: 0;
     width: 100%;
-    height: 5rem;
+    height: 3.5rem;
     background-color: #131313; }
   .hero__content {
-    margin-top: -8rem;
+    margin-top: -5.5rem;
     position: relative;
     max-width: 47.85rem;
     margin-left: 4.28rem; }
@@ -538,8 +539,7 @@ img {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
-    z-index: 3;
-    margin-bottom: 1.3rem; }
+    z-index: 3; }
     .hero__scroll-down::after {
       content: '';
       background: url(../img/arrow-down.svg) no-repeat center;
@@ -811,10 +811,6 @@ img {
     margin-top: 2.5rem; }
   .button__title {
     margin-bottom: 1.5rem; } }
-
-@media screen and (max-width: 570px) {
-  .section-title {
-    margin: 0; } }
 
 @media screen and (max-width: 570px) {
   .section__subtitle {
