@@ -23,7 +23,7 @@
   .hero
     &__content
       min-width: 35.7rem
-      
+      //slider
 @media screen and ( max-width: 760px )
   .col-100
     width: 80%
@@ -142,45 +142,48 @@
 
       //Slider
 
-  
 @media screen and ( max-width: 570px )
   .section
+    &-title
+      &__heading
+        font-size: 1.69rem
+        margin-bottom: 2.2rem
+        line-height: 2.39rem
+      &__text
+        font-size: 1.2rem
+        line-height: 1.96rem
+        max-width: 25rem
     &__subtitle
       max-width: 26rem  
       font-size: 1.27rem
       line-height: 1.7rem
       margin-bottom: 0
       margin-bottom: 2.15rem
-    &-title
-      &__text
-        font-size: 1.2rem
-        line-height: 1.96rem
-        max-width: 25rem
-      &__heading
-        font-size: 1.8rem
-        margin-bottom: 1.5rem
-        line-height: 2.39rem
   .swiper
     &-pagination
       margin-top: -1.25rem
       &-bullet
-        margin-left: 1.5rem
+        margin-left: 1.45rem!important
         width: 9px
         height: 9px
     &-slide
-      margin-top: 0.5rem
+      margin-top: 0.45rem
+      margin-bottom: 2rem
+      &__heading
+        font-size: 1.1rem
       &__word
         display: block
         margin-top: 0.5rem
       &__text
         margin-bottom: -0.9rem
+        margin-right: 4rem
       &__value
         font-size: 1.2rem
       &__img
-        max-height: 16.8rem
+        max-height: 15.1rem
     &-button
-      &-prev, &-next
-        //
+      &-next
+        margin-left: 1rem
   .button-wrap
     margin-top: 3.7rem
 
