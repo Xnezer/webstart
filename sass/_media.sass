@@ -41,7 +41,7 @@
     height: 4.7rem
   .menu
     &__logo
-      margin-left: -0.9rem
+      margin-left: -1.3rem
   .contacts
     &__phone
       margin-right: 0
@@ -56,26 +56,24 @@
       display: none
     &__title
       min-width: 2rem
+      font-size: 1.92rem
     &__scroll-down
       display: none
     &__content
-      min-width: 24.14rem
+      min-width: 27rem
       margin-left: 14px
-      margin-top: 1.7rem
+      margin-bottom: 4.5rem
     &__text
-      font-size: 1.29rem
+      font-size: 1.52rem
+      margin-top: -1rem
       margin-bottom: 2.28rem
       line-height: 2.2rem
     &__button
       display: block
-      min-width: 28rem
+      min-width: 28.2rem
       width: 100%
       margin-top: 1.5rem
-      margin-bottom: 1.4rem
-  .button
-    &--outline
-        margin-top: 2.5rem
-
+      margin-bottom: 2.5rem
     &__title
       margin-bottom: 1.5rem
 
@@ -86,7 +84,7 @@
       max-width: 21.71rem
       line-height: 1.5rem
     &-title__heading
-      font-size: 1.75rem
+      font-size: 1.82rem
   .types
     &__card
        margin-bottom: 6.35rem
@@ -95,9 +93,16 @@
       margin-bottom: 5.85rem
   .card
     min-width: 28rem
+    margin-top: 1rem
+    &__item
+      line-height: 1.87rem
     &__text
-      margin-top: -12rem
-      max-width: 22rem
+      margin-top: -11.8rem
+      max-width: 22.5rem
+      padding-left: 2.45rem
+      max-height: 20rem
+      &--pp
+        margin-top: -11.59rem
       ul
         .after-element:after
           content: '...'
@@ -111,12 +116,12 @@
        padding: 0.9rem 2.6rem
     &__pricetag--big
        padding: 0.9rem 3.8rem
-
-@media screen and ( max-width: 375px )
+  .col-30
+    margin-bottom: -0.6rem
+@media screen and ( max-width: 370px )
   .hero
-    font-size: 20px
-  .button--primary
-    width: 20px
+    &__button
+      min-width: 15rem
       
 
 @media screen and ( max-height: 545px )
