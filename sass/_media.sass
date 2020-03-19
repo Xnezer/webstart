@@ -94,33 +94,29 @@
 @media screen and ( max-width: 570px )
   .types
     &__card
-       margin-bottom: 6.35rem
+       margin-top: 1.3rem
   .design
     &__card
-      margin-bottom: 6.5rem
+      margin-top: 1.25rem
+      &--pp
+        margin-top: 0.95rem
   .card
-    min-width: 28rem
-    margin-top: 1.3rem
+    min-width: 28.5rem
     &--pp
-      margin-top: 1rem
+      margin-top: 3rem
     &__item
       line-height: 1.87rem
     &__text
-      margin-top: -11.8rem
+      margin-top: -12.34rem
       max-width: 22.5rem
       padding-left: 2.45rem
       max-height: 20rem
-      &--pp
-        margin-top: -11.59rem
       ul
         .after-element:after
           content: '...'
           
         li:nth-child(n+8)
           display: none
-    &__text-design
-      margin-top: -12rem
-      max-width: 22rem
     &__pricetag
        padding: 0.9rem 2.6rem
     &__pricetag--big
@@ -135,26 +131,26 @@
   .section-design
     background-color: $dark
     color: $light
-    &__subtitle
-      max-width: 25rem  
-      font-size: 1.3rem
-      line-height: 1.7rem
-      margin-bottom: 0
-      margin-bottom: 2.15rem
   .design__card
     margin-bottom: 6.2rem
   .card
+    &__text-design
+      margin-top: -12.4rem
+      max-width: 22rem
     &__list
       margin-bottom: 1.4rem
-    &__text-design
-      margin-top: -11.8rem
-      max-width: 22.45rem
 
       //Slider
 
   
 @media screen and ( max-width: 570px )
   .section
+    &__subtitle
+      max-width: 26rem  
+      font-size: 1.27rem
+      line-height: 1.7rem
+      margin-bottom: 0
+      margin-bottom: 2.15rem
     &-title
       &__text
         font-size: 1.2rem
@@ -162,7 +158,7 @@
         max-width: 25rem
       &__heading
         font-size: 1.8rem
-        margin-bottom: 1.7rem
+        margin-bottom: 1.5rem
         line-height: 2.39rem
   .swiper
     &-pagination
@@ -196,11 +192,14 @@
 
       //MODAL
 
+
 @media screen and ( max-width: 370px )
   .hero
     &__button
-      min-width: 1rem
-      
+      width: 0
+      min-width: 20rem
+  img
+    min-width: 10rem
 
 @media screen and ( max-height: 545px )
   .hero

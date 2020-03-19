@@ -839,30 +839,26 @@ img {
 
 @media screen and (max-width: 570px) {
   .types__card {
-    margin-bottom: 6.35rem; }
-  .design__card {
-    margin-bottom: 6.5rem; }
-  .card {
-    min-width: 28rem;
     margin-top: 1.3rem; }
+  .design__card {
+    margin-top: 1.25rem; }
+    .design__card--pp {
+      margin-top: 0.95rem; }
+  .card {
+    min-width: 28.5rem; }
     .card--pp {
-      margin-top: 1rem; }
+      margin-top: 3rem; }
     .card__item {
       line-height: 1.87rem; }
     .card__text {
-      margin-top: -11.8rem;
+      margin-top: -12.34rem;
       max-width: 22.5rem;
       padding-left: 2.45rem;
       max-height: 20rem; }
-      .card__text--pp {
-        margin-top: -11.59rem; }
       .card__text ul .after-element:after {
         content: '...'; }
       .card__text ul li:nth-child(n+8) {
         display: none; }
-    .card__text-design {
-      margin-top: -12rem;
-      max-width: 22rem; }
     .card__pricetag {
       padding: 0.9rem 2.6rem; }
     .card__pricetag--big {
@@ -875,28 +871,28 @@ img {
   .section-design {
     background-color: #131313;
     color: #fff; }
-    .section-design__subtitle {
-      max-width: 25rem;
-      font-size: 1.3rem;
-      line-height: 1.7rem;
-      margin-bottom: 0;
-      margin-bottom: 2.15rem; }
   .design__card {
     margin-bottom: 6.2rem; }
-  .card__list {
-    margin-bottom: 1.4rem; }
   .card__text-design {
-    margin-top: -11.8rem;
-    max-width: 22.45rem; } }
+    margin-top: -12.4rem;
+    max-width: 22rem; }
+  .card__list {
+    margin-bottom: 1.4rem; } }
 
 @media screen and (max-width: 570px) {
+  .section__subtitle {
+    max-width: 26rem;
+    font-size: 1.27rem;
+    line-height: 1.7rem;
+    margin-bottom: 0;
+    margin-bottom: 2.15rem; }
   .section-title__text {
     font-size: 1.2rem;
     line-height: 1.96rem;
     max-width: 25rem; }
   .section-title__heading {
     font-size: 1.8rem;
-    margin-bottom: 1.7rem;
+    margin-bottom: 1.5rem;
     line-height: 2.39rem; }
   .swiper-pagination {
     margin-top: -1.25rem; }
@@ -925,7 +921,10 @@ img {
 
 @media screen and (max-width: 370px) {
   .hero__button {
-    min-width: 1rem; } }
+    width: 0;
+    min-width: 20rem; }
+  img {
+    min-width: 10rem; } }
 
 @media screen and (max-height: 545px) {
   .hero__scroll-down {
