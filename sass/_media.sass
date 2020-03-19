@@ -23,6 +23,19 @@
   .hero
     &__content
       min-width: 35.7rem
+      
+@media screen and ( max-width: 760px )
+  .col-100
+    width: 80%
+  .swiper
+    &-slide
+      margin-bottom: 3.78rem
+      &__img
+        margin-top: 5rem
+    &-pagination
+      margin-top: -1.25rem
+      &-bullet
+        margin-left: 1.3rem
 
       
 @media screen and ( max-width: 760px )
@@ -79,21 +92,17 @@
 
 
 @media screen and ( max-width: 570px )
-  .section
-    &__subtitle
-      max-width: 21.71rem
-      line-height: 1.5rem
-    &-title__heading
-      font-size: 1.82rem
   .types
     &__card
        margin-bottom: 6.35rem
   .design
     &__card
-      margin-bottom: 5.85rem
+      margin-bottom: 6.5rem
   .card
     min-width: 28rem
-    margin-top: 1rem
+    margin-top: 1.3rem
+    &--pp
+      margin-top: 1rem
     &__item
       line-height: 1.87rem
     &__text
@@ -140,13 +149,57 @@
     &__text-design
       margin-top: -11.8rem
       max-width: 22.45rem
-      &--pp
-       // height: 14.8rem
+
+      //Slider
+
+  
+@media screen and ( max-width: 570px )
+  .section
+    &-title
+      &__text
+        font-size: 1.2rem
+        line-height: 1.96rem
+        max-width: 25rem
+      &__heading
+        font-size: 1.8rem
+        margin-bottom: 1.7rem
+        line-height: 2.39rem
+  .swiper
+    &-pagination
+      margin-top: -1.25rem
+      &-bullet
+        margin-left: 1.5rem
+        width: 9px
+        height: 9px
+    &-slide
+      margin-top: 0.5rem
+      &__word
+        display: block
+        margin-top: 0.5rem
+      &__text
+        margin-bottom: -0.9rem
+      &__value
+        font-size: 1.2rem
+      &__img
+        max-height: 16.8rem
+    &-button
+      &-prev, &-next
+        //
+  .button-wrap
+    margin-top: 3.7rem
+
+  .col-100
+    margin-left: -1.8rem
+    width: 100%
+    &--margin
+      margin-top: 2.25rem
+
+      //MODAL
 
 @media screen and ( max-width: 370px )
   .hero
     &__button
-      min-width: 15rem
+      min-width: 1rem
       
 
 @media screen and ( max-height: 545px )
