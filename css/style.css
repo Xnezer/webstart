@@ -857,10 +857,10 @@ img {
     margin-bottom: -0.6rem; } }
 
 @media screen and (max-width: 570px) {
-  .section {
+  .section-design {
     background-color: #131313;
     color: #fff; }
-    .section__subtitle {
+    .section-design__subtitle {
       max-width: 25rem;
       font-size: 1.3rem;
       line-height: 1.7rem;
