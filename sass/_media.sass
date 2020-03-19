@@ -18,6 +18,12 @@
       display: none
     &__content
       margin-left: 0
+
+@media screen and ( max-width: 810px )
+  .hero
+    &__content
+      min-width: 35.7rem
+
       
 @media screen and ( max-width: 760px )
   .row
@@ -31,6 +37,11 @@
       margin-left: 0
 
 @media screen and ( max-width: 570px )
+  .header
+    height: 4.7rem
+  .menu
+    &__logo
+      margin-left: -0.9rem
   .contacts
     &__phone
       margin-right: 0
@@ -41,21 +52,38 @@
   .title
     font-size: 1.64rem
   .hero
+    &::after
+      display: none
+    &__title
+      min-width: 2rem
     &__scroll-down
       display: none
     &__content
-      max-width: 24.14rem
+      min-width: 24.14rem
+      margin-left: 14px
+      margin-top: 1.7rem
     &__text
       font-size: 1.29rem
       margin-bottom: 2.28rem
-      line-height: 2rem
+      line-height: 2.2rem
     &__button
       display: block
       min-width: 28rem
-      margin-bottom: 1.84rem
+      width: 100%
+      margin-top: 1.5rem
+      margin-bottom: 1.4rem
+  .button
+    &--outline
+        margin-top: 2.5rem
+
     &__title
       margin-bottom: 1.5rem
-/* Для секций */
+
+@media screen and ( max-width: 570px )
+  .section-title
+    margin: 0
+
+
 @media screen and ( max-width: 570px )
   .section
     &__subtitle
@@ -87,6 +115,12 @@
        padding: 0.9rem 2.6rem
     &__pricetag--big
        padding: 0.9rem 3.8rem
+
+@media screen and ( max-width: 375px )
+  .hero
+    font-size: 20px
+  .button--primary
+    width: 20px
       
 
 @media screen and ( max-height: 545px )
