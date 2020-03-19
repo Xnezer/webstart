@@ -590,8 +590,14 @@ img {
 .button--outline {
   padding: 18px 45px; }
 
+.section-title__heading {
+  font-size: 1rem; }
+
+.section-title__img--margin {
+  margin-bottom: 2rem; }
+
 .types__section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 0.95rem; }
 
 .card__text {
@@ -710,19 +716,22 @@ img {
   .modal__button {
     align-self: flex-end; }
 
-.section-title__heading {
-  font-size: 1.745rem;
-  margin-bottom: 1.9rem; }
+.section-title__heading--big {
+  font-size: 1.745rem; }
 
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide__img {
+    min-height: 30rem; }
   .swiper-slide__word {
     display: block; }
   .swiper-slide__text {
+    margin-top: 1rem;
     flex-basis: 34%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    margin-bottom: 0.55rem; }
+    .swiper-slide__text--margin {
+      margin-bottom: 7.3rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -780,7 +789,7 @@ img {
 
 @media screen and (max-width: 760px) {
   .col-100 {
-    width: 80%; }
+    width: 100%; }
   .swiper-slide {
     margin-bottom: 3.78rem; }
     .swiper-slide__img {
@@ -838,8 +847,16 @@ img {
     margin-bottom: 1.5rem; } }
 
 @media screen and (max-width: 570px) {
+  .section-title__img--margin {
+    margin-bottom: -0.27rem; }
+  .types__section-title {
+    font-size: 1.81rem;
+    margin-bottom: 1.5rem;
+    line-height: 2.39rem; }
+    .types__section-title__img {
+      margin-bottom: 0; }
   .types__card {
-    margin-top: 1.3rem; }
+    margin-top: 1.45rem; }
   .design__card {
     margin-top: 1.25rem; }
     .design__card--pp {
@@ -868,6 +885,8 @@ img {
     margin-bottom: -0.6rem; } }
 
 @media screen and (max-width: 570px) {
+  .design__section-title {
+    font-size: 1.8rem; }
   .section-design {
     background-color: #131313;
     color: #fff; }
@@ -875,19 +894,19 @@ img {
     margin-bottom: 6.2rem; }
   .card__text-design {
     margin-top: -12.4rem;
-    max-width: 22rem; }
+    max-width: 22rem;
+    padding-top: 0.3rem; }
   .card__list {
     margin-bottom: 1.4rem; } }
 
 @media screen and (max-width: 570px) {
-  .section-title__heading {
-    font-size: 1.69rem;
-    margin-bottom: 2.2rem;
-    line-height: 2.39rem; }
+  .section-title__heading--big {
+    margin-bottom: 2.15rem; }
   .section-title__text {
     font-size: 1.2rem;
-    line-height: 1.96rem;
-    max-width: 25rem; }
+    line-height: 1.9rem;
+    max-width: 25rem;
+    margin-bottom: 0.4rem; }
   .section__subtitle {
     max-width: 26rem;
     font-size: 1.27rem;
@@ -909,8 +928,11 @@ img {
       display: block;
       margin-top: 0.5rem; }
     .swiper-slide__text {
-      margin-bottom: -0.9rem;
+      font-size: 0.1rem;
+      margin-bottom: 0.5rem;
       margin-right: 4rem; }
+      .swiper-slide__text--margin {
+        margin-bottom: 1rem; }
     .swiper-slide__value {
       font-size: 1.2rem; }
     .swiper-slide__img {

@@ -26,7 +26,7 @@
       //slider
 @media screen and ( max-width: 760px )
   .col-100
-    width: 80%
+    width: 100%
   .swiper
     &-slide
       margin-bottom: 3.78rem
@@ -92,9 +92,18 @@
 
 
 @media screen and ( max-width: 570px )
+  .section-title
+    &__img--margin
+      margin-bottom: -0.27rem
   .types
+    &__section-title
+      font-size: 1.81rem
+      margin-bottom: 1.5rem
+      line-height: 2.39rem
+      &__img
+        margin-bottom: 0
     &__card
-       margin-top: 1.3rem
+       margin-top: 1.45rem
   .design
     &__card
       margin-top: 1.25rem
@@ -128,6 +137,9 @@
       //DESIGN PROJECT
 
 @media screen and ( max-width: 570px )
+  .design
+    &__section-title
+      font-size: 1.8rem
   .section-design
     background-color: $dark
     color: $light
@@ -137,6 +149,7 @@
     &__text-design
       margin-top: -12.4rem
       max-width: 22rem
+      padding-top: 0.3rem
     &__list
       margin-bottom: 1.4rem
 
@@ -145,14 +158,13 @@
 @media screen and ( max-width: 570px )
   .section
     &-title
-      &__heading
-        font-size: 1.69rem
-        margin-bottom: 2.2rem
-        line-height: 2.39rem
+      &__heading--big
+        margin-bottom: 2.15rem
       &__text
         font-size: 1.2rem
-        line-height: 1.96rem
+        line-height: 1.9rem
         max-width: 25rem
+        margin-bottom: 0.4rem
     &__subtitle
       max-width: 26rem  
       font-size: 1.27rem
@@ -175,8 +187,11 @@
         display: block
         margin-top: 0.5rem
       &__text
-        margin-bottom: -0.9rem
+        font-size: 0.1rem
+        margin-bottom: 0.5rem
         margin-right: 4rem
+        &--margin
+          margin-bottom: 1rem
       &__value
         font-size: 1.2rem
       &__img
