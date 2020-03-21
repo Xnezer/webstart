@@ -349,7 +349,10 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   color: #fff;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  padding-left: 0; }
+  .input--dark {
+    color: #131313; }
   .input--light {
     color: #fff; }
 
@@ -361,7 +364,10 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
+  .policy__label--center {
+    justify-content: center; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -380,6 +386,9 @@ template {
   display: flex;
   align-items: flex-start;
   justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 32%; }
 
 .col-50 {
   width: 50%; }
@@ -439,9 +448,6 @@ img {
         height: 2px;
         background-color: #E3B873;
         margin: 0 10px; }
-
-.card {
-  margin-right: 1rem; }
 
 .header {
   position: fixed;
@@ -589,6 +595,59 @@ img {
 .button--outline {
   padding: 18px 45px; }
 
+.projects {
+  padding-bottom: 30rem; }
+
+.section-title__heading--big {
+  font-size: 1.745rem; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__word {
+    display: block; }
+  .swiper-slide__text {
+    margin-top: 1rem;
+    flex-basis: 34%;
+    margin-bottom: 0.55rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-wrapper {
+  margin-bottom: 6.8rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 1.2rem !important; }
+  .swiper-pagination-bullet-active {
+    background-color: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center;
+  margin-left: 1rem; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -2px; }
+
 .control__section-title {
   margin-top: -30rem; }
 
@@ -705,11 +764,12 @@ img {
   max-width: 53rem;
   text-transform: none;
   margin: 0 auto;
-  margin-top: 1.23rem;
+  margin-top: -0.7rem;
   margin-bottom: 3.29rem; }
 
 .design {
-  background: linear-gradient(transparent 52.5%, #131313 52.5%); }
+  background: linear-gradient(transparent 39%, #131313 39%);
+  padding-bottom: 30rem; }
 
 .card__title {
   color: #131313; }
@@ -725,6 +785,51 @@ img {
     margin-bottom: 4.3rem; }
   .card__text {
     margin-left: 0; } }
+
+.footer {
+  padding-top: 3rem;
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 2.5rem;
+    margin-top: -20rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2.1rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.7rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
@@ -776,59 +881,6 @@ img {
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
-
-.projects {
-  padding-bottom: 30rem; }
-
-.section-title__heading--big {
-  font-size: 1.745rem; }
-
-.swiper-slide {
-  display: flex;
-  flex-wrap: wrap; }
-  .swiper-slide__word {
-    display: block; }
-  .swiper-slide__text {
-    margin-top: 1rem;
-    flex-basis: 34%;
-    margin-bottom: 0.55rem; }
-  .swiper-slide__heading {
-    font-size: 1.285rem;
-    line-height: 1.78rem;
-    font-family: 'Yeseva One', cursive;
-    color: #E3B873;
-    text-transform: uppercase;
-    margin-bottom: 0.64rem; }
-
-.swiper-wrapper {
-  margin-bottom: 6.8rem; }
-
-.swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3);
-  margin-left: 1.2rem !important; }
-  .swiper-pagination-bullet-active {
-    background-color: #fff; }
-
-.swiper-button-prev, .swiper-button-next {
-  bottom: 0;
-  top: auto;
-  background-size: 42px;
-  width: 42px;
-  height: 14px; }
-  .swiper-button-prev::after, .swiper-button-next::after {
-    display: none; }
-
-.swiper-button-next {
-  background: url("../img/arrow-next.svg") no-repeat center;
-  margin-left: 3.7rem; }
-
-.swiper-button-prev {
-  left: 0;
-  background: url("../img/arrow-prev.svg") no-repeat center; }
-
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  width: auto;
-  bottom: -2px; }
 
 @media screen and (max-width: 1240px) {
   .nav__item {
