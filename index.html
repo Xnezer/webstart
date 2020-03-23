@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=f5e7dd16-c46a-4b81-aa5b-b1740005b9c6
+  &lang=ru_RU" type="text/javascript">
+  </script>
   <title>Document</title>
 </head>
 <body>
@@ -178,16 +181,16 @@
           <form action="#" class="form control__form">
             <div class="control__input-group">
               <label for="user-name" class="label form__label control__label">Имя</label>
-              <input type="text" class="input form__input control__input input--dark" id="user-name" placeholder="Как вас зовут:">
+              <input type="text" name="userName" class="input form__input control__input input--dark" id="user-name" placeholder="Как вас зовут:">
             </div>
             <div class="control__input-group">
               <label for="user-phone" class="label form__label control__label">Телефон</label>
-              <input type="tel" class="input form__input control__input input--dark" id="user-phone" placeholder="Ваш номер телефона:">
+              <input type="tel" name="userPhone" class="input form__input control__input input--dark" id="user-phone" placeholder="Ваш номер телефона:">
             </div>
             <button class="button button--primary control__button">Отправить</button>
             <div class="policy control__policy">
-              <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-              <label for="policy-checkbox" class="policy__label control__policy-label">я соглашаюсь с обработкой данных</label>
+              <input type="checkbox" name="control-checkbox" id="control-checkbox" class="policy__checkbox">
+              <label for="control-checkbox" class="policy__label control__policy-label">я соглашаюсь с обработкой данных</label>
             </div>
             <!-- /.policy -->
           </form>
@@ -429,25 +432,31 @@
         <form action="#" class="form footer__form">
           <div class="input-group footer__input-group">  
             <label for="user-name" class="label form__label label--light">Имя</label>
-            <input type="text" class="input form__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">
+            <input type="text" name="userName" class="input form__input footer__input input--light" id="user-name" placeholder="Как вас зовут:">
           </div>
           <div class="input-group footer__input-group">
           <label for="user-phone" class="label form__label label--light">Телефон</label>
-          <input type="tel" class="input form__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
+          <input type="tel" name="userPhone" class="input form__input footer__input input--light" id="user-phone" placeholder="Ваш номер телефона:">
           </div>
           <div class="input-group footer__input-group footer__input-group--full-width">
           <label for="user-question" class="label form__label label--light">Вопрос</label>
           <input type="text" class="input form__input footer__input input--light" id="user-email" placeholder="Я хочу спросить:">
-          </div>
+          </div>  
           <div class="policy footer__policy">
-            <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-            <label for="policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+            <input type="checkbox" name="footer-checkbox" id="footer-checkbox" class="policy__checkbox">
+            <label for="footer-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
           <button class="button button--primary footer__button">Отправить</button>
         </form>
       </div>
       <!-- /.footer-wrap -->
+      <div class="footer__map-title">
+        <h3 class="footer__map-title">Ростов на дону, Торговый центр Plaza Прямой телефон +7 (999) 768 32 99</h3>
+        <a href="#" class="footer__icon"><img src="img/footer-icon1.svg" alt=""></a>
+        <a href="#" class="footer__icon"><img src="img/footer-icon2.svg" alt=""></a>
+      </div>
+      <div class="map footer__map" id="map"></div>
     </div>
     <!-- /.container -->
     <div class="footer__menu">
@@ -493,8 +502,8 @@
         </div>
 
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-          <label for="policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" name="modal-checkbox" id="modal-checkbox" class="policy__checkbox">
+          <label for="modal-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
         <button class="button button--primary modal__button">Отправить заявку</button>

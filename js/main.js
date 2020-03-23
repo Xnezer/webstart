@@ -79,6 +79,106 @@ $(document).ready(function () {
     }
   })
 
+  $('.footer__form').validate({
+
+    wrapper: "span", debug:true,
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: "required",
+      // правило - объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // сообщение
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя даолжно быть не короче 2 символов",
+        maxlength: "Имя даолжно быть не длинее 15 символов"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      }
+    }
+  })
+
+  $('.control__form').validate({
+
+    wrapper: "span", debug:true,
+    errorElement: "div",
+    errorClass: "invalid",
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: "required",
+      // правило - объект (блок)
+      userEmail: {
+        required: true,
+        email: true
+      }
+    }, // сообщение
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя даолжно быть не короче 2 символов",
+        maxlength: "Имя даолжно быть не длинее 15 символов"
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      }
+    }
+  })
+
   // маска для телефона
   $('[type=tel]').mask('+7-(000)-000-00-00', {placeholder: "+7-(___)-___-__-__"});
+
+  // Яндекс карты
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [47.244729, 39.723187],
+            zoom: 18
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Наш офис',
+            balloonContent: 'Вход со двора'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/myIcon.svg',
+            // Размеры метки.
+            iconImageSize: [32, 32],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        });
+        myMap.behaviors.disable('scrollZoom');
+    myMap.geoObjects
+        .add(myPlacemark);
+});
 });
