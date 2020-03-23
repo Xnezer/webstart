@@ -65,6 +65,8 @@
   .title
     font-size: 1.64rem
   .hero
+    max-height: 44.6rem
+    padding-bottom: 0
     &::after
       display: none
     &__title
@@ -73,14 +75,15 @@
     &__scroll-down
       display: none
     &__content
+      padding-top: 7.2rem
       min-width: 27rem
       margin-left: 14px
-      margin-bottom: 4.5rem
     &__text
       font-size: 1.52rem
       margin-top: -1rem
-      margin-bottom: 2.28rem
+      margin-bottom: 2.9rem
       line-height: 2.2rem
+      line-height: 2rem
     &__button
       display: block
       min-width: 28.2rem
@@ -88,7 +91,7 @@
       margin-top: 1.5rem
       margin-bottom: 2.5rem
     &__title
-      margin-bottom: 1.5rem
+      margin-bottom: 1.9rem
 
 
 @media screen and ( max-width: 570px )
@@ -104,6 +107,7 @@
         margin-bottom: 0
     &__card
        margin-top: 1.45rem
+       margin-bottom: 5.8rem
   .design
     &__card
       margin-top: 1.25rem
@@ -138,7 +142,7 @@
 
 @media screen and ( max-width: 570px )
   .design
-    padding: 0
+    padding-bottom: 0
     &__section-title
       font-size: 1.8rem
   .section-design
@@ -272,4 +276,68 @@
       &--center
       justify-content: flex-start
 
+//PROJECTS
+@media screen and ( max-width: 570px )
+  .projects
+    padding-top: 1.5rem
+  .section
+    &-title__heading
+      &--big
+        font-size: 1.65rem
+        line-height: 2.6rem
+  .swiper
+    &-wrapper
+      margin-bottom: 1.1rem
+    &-slide
+      &__text
+        margin-bottom: 0
 
+//CONTROL
+@media screen and ( max-width: 570px )
+  .control
+    background-color: $dark
+    padding-bottom: 0
+    color: $light
+    &-title
+      &__img
+        margin-bottom: 5rem
+      &__heading
+        font-size: 1.8rem
+    &__video
+      margin-top: 3.45rem
+      margin-bottom: 2rem
+      min-height: 17.3rem
+      min-width: 28.3rem
+    &__container
+      min-width: 28.3rem
+    &__text
+      font-size: 1.14rem
+      line-height: 2.04rem
+      margin-bottom: 2.6rem
+      &::before
+        margin-bottom: 1.2rem
+    &__form
+      display: flex
+      flex-direction: column
+    &__input-group
+      &--margin
+        margin-bottom: 4rem
+    &__policy
+      margin-top: 1rem
+      order: 2
+    &__button
+      order: 3
+      margin-top: 3.2rem
+      font-size: 1.2rem
+      padding: 1.5rem 4.9rem
+      margin-bottom: -2rem
+    &__input
+      color: $light
+      &::placeholder
+        color: $light
+        font-size: 1.5rem
+
+
+  .video__play
+    width: 5.2rem
+    height: 5.2rem

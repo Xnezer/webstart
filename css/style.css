@@ -667,7 +667,8 @@ img {
   position: relative;
   max-width: 58.357rem;
   min-height: 31rem;
-  background: #131313 url("../img/video-mask.jpg");
+  background: #131313 url("../img/video-mask.jpg") no-repeat;
+  background-size: 100% 100%;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
   .control__video::before {
     content: '';
@@ -711,6 +712,7 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   flex-basis: 30%; }
   .control__input-group__label {
     text-align: left;
@@ -967,30 +969,34 @@ img {
     display: none; }
   .title {
     font-size: 1.64rem; }
-  .hero::after {
-    display: none; }
-  .hero__title {
-    min-width: 2rem;
-    font-size: 1.92rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    min-width: 27rem;
-    margin-left: 14px;
-    margin-bottom: 4.5rem; }
-  .hero__text {
-    font-size: 1.52rem;
-    margin-top: -1rem;
-    margin-bottom: 2.28rem;
-    line-height: 2.2rem; }
-  .hero__button {
-    display: block;
-    min-width: 28.2rem;
-    width: 100%;
-    margin-top: 1.5rem;
-    margin-bottom: 2.5rem; }
-  .hero__title {
-    margin-bottom: 1.5rem; } }
+  .hero {
+    max-height: 44.6rem;
+    padding-bottom: 0; }
+    .hero::after {
+      display: none; }
+    .hero__title {
+      min-width: 2rem;
+      font-size: 1.92rem; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      padding-top: 7.2rem;
+      min-width: 27rem;
+      margin-left: 14px; }
+    .hero__text {
+      font-size: 1.52rem;
+      margin-top: -1rem;
+      margin-bottom: 2.9rem;
+      line-height: 2.2rem;
+      line-height: 2rem; }
+    .hero__button {
+      display: block;
+      min-width: 28.2rem;
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-bottom: 2.5rem; }
+    .hero__title {
+      margin-bottom: 1.9rem; } }
 
 @media screen and (max-width: 570px) {
   .section-title__img--margin {
@@ -1002,7 +1008,8 @@ img {
     .types__section-title__img {
       margin-bottom: 0; }
   .types__card {
-    margin-top: 1.45rem; }
+    margin-top: 1.45rem;
+    margin-bottom: 5.8rem; }
   .design__card {
     margin-top: 1.25rem; }
     .design__card--pp {
@@ -1032,7 +1039,7 @@ img {
 
 @media screen and (max-width: 570px) {
   .design {
-    padding: 0; }
+    padding-bottom: 0; }
     .design__section-title {
       font-size: 1.8rem; }
   .section-design {
@@ -1158,3 +1165,71 @@ img {
     margin-bottom: 2.07rem;
     font-size: 1.35rem;
     justify-content: flex-start; } }
+
+@media screen and (max-width: 570px) {
+  .projects {
+    padding-top: 1.5rem; }
+  .section-title__heading--big {
+    font-size: 1.65rem;
+    line-height: 2.6rem; }
+  .swiper-wrapper {
+    margin-bottom: 1.1rem; }
+  .swiper-slide__text {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 570px) {
+  .control {
+    background-color: #131313;
+    padding-bottom: 0;
+    color: #fff; }
+    .control-title__img {
+      margin-bottom: 5rem; }
+    .control-title__heading {
+      font-size: 1.8rem; }
+    .control__video {
+      margin-top: 3.45rem;
+      margin-bottom: 2rem;
+      min-height: 17.3rem;
+      min-width: 28.3rem; }
+    .control__container {
+      min-width: 28.3rem; }
+    .control__text {
+      font-size: 1.14rem;
+      line-height: 2.04rem;
+      margin-bottom: 2.6rem; }
+      .control__text::before {
+        margin-bottom: 1.2rem; }
+    .control__form {
+      display: flex;
+      flex-direction: column; }
+    .control__input-group--margin {
+      margin-bottom: 4rem; }
+    .control__policy {
+      margin-top: 1rem;
+      order: 2; }
+    .control__button {
+      order: 3;
+      margin-top: 3.2rem;
+      font-size: 1.2rem;
+      padding: 1.5rem 4.9rem;
+      margin-bottom: -2rem; }
+    .control__input {
+      color: #fff; }
+      .control__input::-webkit-input-placeholder {
+        color: #fff;
+        font-size: 1.5rem; }
+      .control__input::-moz-placeholder {
+        color: #fff;
+        font-size: 1.5rem; }
+      .control__input:-ms-input-placeholder {
+        color: #fff;
+        font-size: 1.5rem; }
+      .control__input::-ms-input-placeholder {
+        color: #fff;
+        font-size: 1.5rem; }
+      .control__input::placeholder {
+        color: #fff;
+        font-size: 1.5rem; }
+  .video__play {
+    width: 5.2rem;
+    height: 5.2rem; } }
