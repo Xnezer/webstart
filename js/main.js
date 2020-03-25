@@ -47,13 +47,17 @@ $(document).ready(function () {
   
   //Валидация формы
   $('.modal__form').validate({
-    errorClass: 'invalid',
     wrapper: 'span',
+    errorClass: 'invalid',
     errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
       modalCheckbox: "required",
-      userName: "required",
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
       userPhone: "required",
       // compound rule
       userEmail: {
@@ -63,12 +67,40 @@ $(document).ready(function () {
     },
     messages: {
       modalCheckbox: "Подтвердите отправку данных",
-      userName: "Имя обязательно",
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя даолжно быть не короче 2 символов",
+        maxlength: "Имя даолжно быть не длинее 15 символов"
+      },
       userPhone: "Телефон обязателен",
       userEmail: {
         required: "Введите email",
         email: "Введите в формате name@domain.com"
       }
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: 'invalid',
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      controlCheckbox: "required",
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      userPhone: "required",
+    },
+    messages: {
+      controlCheckbox: "Подтвердите отправку данных",
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя даолжно быть не короче 2 символов",
+        maxlength: "Имя даолжно быть не длинее 15 символов"
+      },
+      userPhone: "Телефон обязателен",
     }
   });
 
@@ -78,33 +110,26 @@ $(document).ready(function () {
     errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
-      controlCheckbox: "required",
-      userName: "required",
+      userQuestion: "required",
+      footerCheckbox: "required",
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
       userPhone: "required",
     },
     messages: {
-      controlCheckbox: "Подтвердите отправку данных",
-      userName: "Имя обязательно",
+      userQuestion: "Введите вопрос",
+      footerCheckbox: "Подтвердите отправку данных",
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя даолжно быть не короче 2 символов",
+        maxlength: "Имя даолжно быть не длинее 15 символов"
+      },
       userPhone: "Телефон обязателен",
     }
   });
-
-  $('.control__form').validate({
-    errorClass: 'invalid',
-    wrapper: 'span',
-    errorElement: "div",
-    rules: {
-      // simple rule, converted to {required:true}
-      controlCheckbox: "required",
-      userName: "required",
-      userPhone: "required",
-    },
-    messages: {
-      controlCheckbox: "Подтвердите отправку данных",
-      userName: "Имя обязательно",
-      userPhone: "Телефон обязателен",
-    }
-  })
 
   // маска для телефона
   $('[type=tel]').mask('+7-(000)-000-00-00', {placeholder: "+7-(___)-___-__-__"});

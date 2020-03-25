@@ -389,13 +389,21 @@ span .invalid {
 
 #controlCheckbox-error {
   position: absolute;
-  left: 45%;
+  left: 40%;
   margin-top: -1rem; }
 
 #modalCheckbox-error {
   position: absolute;
   left: 10%;
   top: 83%; }
+
+#footerCheckbox-error {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 25%; }
+
+.footer__policy {
+  position: relative; }
 
 .container {
   width: 85%;
