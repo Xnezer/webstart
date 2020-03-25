@@ -47,101 +47,62 @@ $(document).ready(function () {
   
   //Валидация формы
   $('.modal__form').validate({
-
-    wrapper: "span", debug:true,
+    errorClass: 'invalid',
+    wrapper: 'span',
     errorElement: "div",
-    errorClass: "invalid",
     rules: {
-      // строчное правило
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15,
-      },
+      // simple rule, converted to {required:true}
+      modalCheckbox: "required",
+      userName: "required",
       userPhone: "required",
-      // правило - объект (блок)
+      // compound rule
       userEmail: {
         required: true,
         email: true
       }
-    }, // сообщение
+    },
     messages: {
-      userName: {
-        required: "Имя обязательно",
-        minlength: "Имя даолжно быть не короче 2 символов",
-        maxlength: "Имя даолжно быть не длинее 15 символов"
-      },
+      modalCheckbox: "Подтвердите отправку данных",
+      userName: "Имя обязательно",
       userPhone: "Телефон обязателен",
       userEmail: {
-        required: "Обязательно укажите email",
+        required: "Введите email",
         email: "Введите в формате name@domain.com"
       }
     }
-  })
+  });
 
   $('.footer__form').validate({
-
-    wrapper: "span", debug:true,
+    errorClass: 'invalid',
+    wrapper: 'span',
     errorElement: "div",
-    errorClass: "invalid",
     rules: {
-      // строчное правило
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15,
-      },
+      // simple rule, converted to {required:true}
+      controlCheckbox: "required",
+      userName: "required",
       userPhone: "required",
-      // правило - объект (блок)
-      userEmail: {
-        required: true,
-        email: true
-      }
-    }, // сообщение
+    },
     messages: {
-      userName: {
-        required: "Имя обязательно",
-        minlength: "Имя даолжно быть не короче 2 символов",
-        maxlength: "Имя даолжно быть не длинее 15 символов"
-      },
+      controlCheckbox: "Подтвердите отправку данных",
+      userName: "Имя обязательно",
       userPhone: "Телефон обязателен",
-      userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате name@domain.com"
-      }
     }
-  })
+  });
 
   $('.control__form').validate({
-
-    wrapper: "span", debug:true,
+    errorClass: 'invalid',
+    wrapper: 'span',
     errorElement: "div",
-    errorClass: "invalid",
     rules: {
-      // строчное правило
-      userName: {
-        required: true,
-        minlength: 2,
-        maxlength: 15,
-      },
+      // simple rule, converted to {required:true}
+      controlCheckbox: "required",
+      userName: "required",
       userPhone: "required",
-      // правило - объект (блок)
-      userEmail: {
-        required: true,
-        email: true
-      }
-    }, // сообщение
+    },
     messages: {
-      userName: {
-        required: "Имя обязательно",
-        minlength: "Имя даолжно быть не короче 2 символов",
-        maxlength: "Имя даолжно быть не длинее 15 символов"
-      },
+      controlCheckbox: "Подтвердите отправку данных",
+      userName: "Имя обязательно",
       userPhone: "Телефон обязателен",
-      userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате name@domain.com"
-      }
     }
   })
 
