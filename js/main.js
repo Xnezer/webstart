@@ -52,7 +52,6 @@ $(document).ready(function () {
     errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
-      modalCheckbox: "required",
       userName: {
         required: true,
         minlength: 2,
@@ -66,7 +65,6 @@ $(document).ready(function () {
       }
     },
     messages: {
-      modalCheckbox: "Подтвердите отправку данных",
       userName: {
         required: "Имя обязательно",
         minlength: "Имя даолжно быть не короче 2 символов",
@@ -81,11 +79,11 @@ $(document).ready(function () {
   });
 
   $('.control__form').validate({
+    wrapper: 'span',
     errorClass: 'invalid',
     errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
-      controlCheckbox: "required",
       userName: {
         required: true,
         minlength: 2,
@@ -94,7 +92,6 @@ $(document).ready(function () {
       userPhone: "required",
     },
     messages: {
-      controlCheckbox: "Подтвердите отправку данных",
       userName: {
         required: "Имя обязательно",
         minlength: "Имя даолжно быть не короче 2 символов",
@@ -111,7 +108,6 @@ $(document).ready(function () {
     rules: {
       // simple rule, converted to {required:true}
       userQuestion: "required",
-      footerCheckbox: "required",
       userName: {
         required: true,
         minlength: 2,
@@ -120,7 +116,6 @@ $(document).ready(function () {
       userPhone: "required",
     },
     messages: {
-      userQuestion: "Введите вопрос",
       footerCheckbox: "Подтвердите отправку данных",
       userName: {
         required: "Имя обязательно",
