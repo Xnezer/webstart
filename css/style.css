@@ -949,7 +949,7 @@ img {
   .types__card {
     margin-bottom: 4.3rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: auto; } }
 
 @media screen and (max-width: 570px) {
   .header {
@@ -1020,7 +1020,8 @@ img {
       margin-top: -12.34rem;
       max-width: 22.5rem;
       padding-left: 2.45rem;
-      max-height: 20rem; }
+      max-height: 20rem;
+      margin-left: 0; }
       .card__text ul .after-element:after {
         content: '...'; }
       .card__text ul li:nth-child(n+8) {
