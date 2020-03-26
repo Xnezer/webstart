@@ -406,6 +406,9 @@ span .invalid {
 .footer__policy {
   position: relative; }
 
+#container {
+  width: 100%; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -876,8 +879,8 @@ img {
     max-width: 35rem;
     margin-bottom: 1.85rem; }
   .footer__icon {
-    margin-right: 1rem;
-    margin-bottom: 3.071rem; }
+    margin-right: 0.5rem;
+    margin-bottom: 0.6rem; }
 
 .modal {
   opacity: 0;
@@ -1097,7 +1100,7 @@ img {
       height: 9px; }
   .swiper-slide {
     margin-top: 0.45rem;
-    margin-bottom: 2rem; }
+    margin-bottom: 3,9rem; }
     .swiper-slide__heading {
       font-size: 1.1rem; }
     .swiper-slide__word {
@@ -1112,7 +1115,8 @@ img {
     .swiper-slide__value {
       font-size: 1.2rem; }
     .swiper-slide__img {
-      max-height: 15.1rem; }
+      max-height: 11.59rem;
+      margin-top: 2.95rem; }
   .swiper-button-next {
     margin-left: 1rem; }
   .button-wrap {
@@ -1150,11 +1154,9 @@ img {
     .footer__menu {
       display: none; }
     .footer__map {
-      margin: 0;
-      width: 100%;
-      order: 3; }
+      max-height: 253px !important;
+      min-height: 0; }
       .footer__map-title {
-        order: 4;
         font-size: 1.5rem; }
     .footer__wrap {
       margin-top: 0;
@@ -1195,7 +1197,20 @@ img {
   .policy__label {
     margin-bottom: 2.07rem;
     font-size: 1.35rem;
-    justify-content: flex-start; } }
+    justify-content: flex-start; }
+  .column-reverse {
+    display: flex;
+    flex-direction: column-reverse; }
+  #container {
+    max-height: 270px;
+    margin-bottom: 2.1rem; }
+  .ymaps-2-1-76-map {
+    max-height: 253px !important;
+    min-width: 300px !important; }
+  .ymaps-2-1-76-zoom__scale {
+    display: none; }
+  .ymaps-2-1-76-zoom__minus {
+    top: 35px; } }
 
 @media screen and (max-width: 570px) {
   .projects {
@@ -1218,7 +1233,8 @@ img {
     .control-title__img {
       margin-bottom: 5rem; }
     .control-title__heading {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem; }
     .control__video {
       margin-top: 3.45rem;
       margin-bottom: 2rem;
