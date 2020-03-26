@@ -634,8 +634,8 @@ img {
   width: 100%; }
 
 .swiper-container__img {
-  width: 48.5rem;
-  margin-left: -4.7rem; }
+  max-width: 48.5rem;
+  margin-left: -11%; }
 
 .swiper-slide {
   display: flex;
@@ -643,7 +643,7 @@ img {
   .swiper-slide__img {
     margin-top: 1.5rem;
     width: 100% !important;
-    height: 34.428rem !important; }
+    max-height: 34.428rem !important; }
   .swiper-slide__word {
     display: block; }
   .swiper-slide__text {
@@ -960,7 +960,9 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .projects__title-text {
+    max-width: 23rem; } }
 
 @media screen and (max-width: 810px) {
   .hero__content {
@@ -1219,7 +1221,15 @@ img {
   .ymaps-2-1-76-zoom__scale {
     display: none; }
   .ymaps-2-1-76-zoom__minus {
-    top: 35px; } }
+    top: 35px; }
+  #footerCheckbox-error {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0; }
+  #modalCheckbox-error {
+    position: absolute;
+    left: 11%;
+    top: 78%; } }
 
 @media screen and (max-width: 570px) {
   .projects {
@@ -1280,6 +1290,7 @@ img {
       padding: 1.5rem 4.9rem;
       margin-bottom: -2rem; }
     .control__input {
+      width: 100%;
       color: #fff; }
       .control__input::-webkit-input-placeholder {
         color: #fff;
@@ -1296,6 +1307,10 @@ img {
       .control__input::placeholder {
         color: #fff;
         font-size: 1.5rem; }
+  #controlCheckbox-error {
+    position: absolute;
+    left: 1.5rem;
+    margin-top: 1.8rem; }
   .video__play {
     width: 5.2rem;
     height: 5.2rem; } }

@@ -90,7 +90,10 @@ $(document).ready(function () {
           modal.removeClass('modal--visible')
         },
         error: function (response) {
-          console.error('Ошибка запроса ' + response)
+          console.error('Ошибка запроса ' + response);
+          alert('Извините произошла ошибка :(');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
         }
       });
     }
@@ -131,7 +134,10 @@ $(document).ready(function () {
           modal.removeClass('modal--visible')
         },
         error: function (response) {
-          console.error('Ошибка запроса ' + response)
+          console.error('Ошибка запроса ' + response);
+          alert('Извините произошла ошибка :(');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
         }
       });
     }
@@ -174,7 +180,10 @@ $(document).ready(function () {
           modal.removeClass('modal--visible')
         },
         error: function (response) {
-          console.error('Ошибка запроса ' + response)
+          console.error('Ошибка запроса ' + response);
+          alert('Извините произошла ошибка :(');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
         }
       });
     }

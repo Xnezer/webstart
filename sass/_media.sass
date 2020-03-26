@@ -18,6 +18,8 @@
       display: none
     &__content
       margin-left: 0
+  .projects__title-text
+    max-width: 23rem
 
 @media screen and ( max-width: 810px )
   .hero
@@ -216,7 +218,6 @@
     &--margin
       margin-top: 2.25rem
 
-      //MODAL
 
 
 @media screen and ( max-width: 370px )
@@ -302,6 +303,16 @@
   .ymaps-2-1-76-zoom__minus
     top: 35px
 
+  #footerCheckbox-error
+    position: absolute
+    bottom: 0.5rem
+    left: 0
+
+  #modalCheckbox-error
+    position: absolute
+    left: 11%
+    top: 78%
+
 
 //PROJECTS
 @media screen and ( max-width: 570px )
@@ -371,10 +382,16 @@
       padding: 1.5rem 4.9rem
       margin-bottom: -2rem
     &__input
+      width: 100%
       color: $light
       &::placeholder
         color: $light
         font-size: 1.5rem
+  #controlCheckbox-error
+    position: absolute
+    left: 1.5rem
+    margin-top: 1.8rem
+
 
 
   .video__play
