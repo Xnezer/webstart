@@ -1165,8 +1165,7 @@ img {
     .footer__menu {
       display: none; }
     .footer__map {
-      max-height: 253px !important;
-      min-height: 0; }
+      max-height: 253px !important; }
       .footer__map-title {
         font-size: 1.5rem; }
     .footer__wrap {
