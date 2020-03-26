@@ -154,6 +154,7 @@ $(document).ready(function () {
     },
     messages: {
       footerCheckbox: "Подтвердите отправку данных",
+      userQuestion: "Введите вопрос",
       userName: {
         required: "Имя обязательно",
         minlength: "Имя даолжно быть не короче 2 символов",
