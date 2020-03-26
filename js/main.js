@@ -75,6 +75,22 @@ $(document).ready(function () {
         required: "Введите email",
         email: "Введите в формате name@domain.com"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response)
+        }
+      });
     }
   });
 
@@ -98,6 +114,22 @@ $(document).ready(function () {
         maxlength: "Имя даолжно быть не длинее 15 символов"
       },
       userPhone: "Телефон обязателен",
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response)
+        }
+      });
     }
   });
 
@@ -123,6 +155,22 @@ $(document).ready(function () {
         maxlength: "Имя даолжно быть не длинее 15 символов"
       },
       userPhone: "Телефон обязателен",
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: ' + response);
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          $(form)[0].reset();
+          modal.removeClass('modal--visible')
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response)
+        }
+      });
     }
   });
 
