@@ -52,6 +52,7 @@ $(document).ready(function () {
     errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
+      modalCheckbox: "required",
       userName: {
         required: true,
         minlength: 2,
@@ -65,6 +66,7 @@ $(document).ready(function () {
       }
     },
     messages: {
+      modalCheckbox: 'Подтвердите ообработку данных',
       userName: {
         required: "Имя обязательно",
         minlength: "Имя даолжно быть не короче 2 символов",
@@ -100,6 +102,7 @@ $(document).ready(function () {
     errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
+      controlCheckbox: "required",
       userName: {
         required: true,
         minlength: 2,
@@ -108,6 +111,7 @@ $(document).ready(function () {
       userPhone: "required",
     },
     messages: {
+      controlCheckbox: 'Подтвердите ообработку данных',
       userName: {
         required: "Имя обязательно",
         minlength: "Имя даолжно быть не короче 2 символов",
@@ -139,6 +143,7 @@ $(document).ready(function () {
     errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
+      footerCheckbox: "required",
       userQuestion: "required",
       userName: {
         required: true,

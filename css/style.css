@@ -359,7 +359,7 @@ template {
 .policy__checkbox {
   opacity: 0;
   visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
+  .policy__checkbox:checked ~ .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center/0.8rem; }
 
 .policy__label {
@@ -389,8 +389,8 @@ span .invalid {
 
 #controlCheckbox-error {
   position: absolute;
-  left: 40%;
-  margin-top: -1rem; }
+  left: 41.3%;
+  margin-top: 1.5rem; }
 
 #modalCheckbox-error {
   position: absolute;
