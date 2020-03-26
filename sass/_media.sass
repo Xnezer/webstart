@@ -333,14 +333,17 @@
     margin-top: 0
   .swiper
     &-container__img
-      max-width: 28.33rem
+      min-width: 28.3rem
       margin-left: 0rem
+      max-height: 19.5rem
     &-slide
       display: flex
       flex-wrap: wrap
       &__img
+        max-height: 19.5rem
         margin-top: 3rem
-
+        min-width: 100% !important
+        margin-left: 0
 //CONTROL
 @media screen and ( max-width: 570px )
   .control
