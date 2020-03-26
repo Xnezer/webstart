@@ -524,7 +524,8 @@ img {
   align-items: center;
   padding-top: 100px;
   background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover;
-  height: 92vh;
+  height: 90vh;
+  max-height: 790px;
   color: #fff;
   padding-right: 26rem; }
   .hero::before {
@@ -536,17 +537,17 @@ img {
     height: 100%;
     background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
-    margin-top: -2rem;
     position: relative;
-    max-width: 47.85rem;
-    margin-left: 4.28rem; }
+    left: 6.5%;
+    top: -5.5%;
+    max-width: 47.85rem; }
   .hero__instagram {
     max-width: 80px;
     position: absolute;
     left: 0;
     top: 0;
     height: 100vh;
-    margin-top: -2rem; }
+    max-height: 790px; }
   .hero__scroll-down {
     font-family: 'Yeseva One', sans-serif;
     font-size: 0.85rem;
@@ -630,7 +631,7 @@ img {
 .col-100--margin {
   margin-left: -0.5rem; }
 
-#slide-img {
+.slide-img {
   width: 100%; }
 
 .swiper-container__img {
