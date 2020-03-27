@@ -3,14 +3,14 @@
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/subset-FuturaBookC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 @font-face {
   font-family: 'Futura Demi';
   src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/subset-FuturaDemiC.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: wrap; }
+  font-display: swap; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -406,7 +406,40 @@ span .invalid {
   position: relative; }
 
 #container {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
+
+.control__scroll-up {
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 0.9rem;
+  position: relative;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  min-width: 10rem;
+  min-height: 4rem;
+  background-color: #181818;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  z-index: 3; }
+
+.button__scroll-up {
+  position: absolute;
+  margin-top: -8rem;
+  width: 10rem;
+  opacity: 0;
+  visibility: hidden; }
+
+.button__scroll-up--fixed {
+  position: fixed;
+  left: -3%;
+  top: 50%;
+  transform: rotate(90deg);
+  z-index: 999; }
 
 .container {
   width: 85%;
@@ -425,7 +458,8 @@ span .invalid {
   width: 50%; }
 
 *, *:before, *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: normal; }
 
 html {
   font-size: 14px; }
@@ -500,6 +534,9 @@ img {
   font-size: 1.075rem;
   color: #E3B873;
   text-transform: uppercase; }
+  .logo-link {
+    text-decoration: none;
+    color: #E3B873; }
 
 .nav__item {
   color: #fff;
@@ -523,7 +560,7 @@ img {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover;
+  background: #131313 url(../img/hero-bg-min.jpg) no-repeat center/cover;
   height: 90vh;
   max-height: 790px;
   color: #fff;
@@ -703,7 +740,7 @@ img {
   position: relative;
   max-width: 58.357rem;
   min-height: 31rem;
-  background: #131313 url("../img/video-mask.jpg") no-repeat;
+  background: #131313 url("../img/video-mask-min.jpg") no-repeat;
   background-size: 100% 100%;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15); }
   .control__video::before {
@@ -831,7 +868,7 @@ img {
 
 .footer {
   padding-top: 3rem;
-  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover; }
+  background: #131313 url("../img/footer-bg-min.jpg") no-repeat center/cover; }
   .footer__wrap {
     background-color: #181818;
     max-width: 63.07rem;
@@ -892,7 +929,7 @@ img {
     margin-right: 0.5rem;
     margin-bottom: 0.6rem; }
 
-.modal {
+.modal, .modal-thanks {
   opacity: 0;
   visibility: hidden;
   position: fixed;
@@ -907,16 +944,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .modal--visible {
+  .modal--visible, .modal-thanks--visible {
     opacity: 1;
     visibility: visible; }
-  .modal__dialog {
+  .modal__dialog, .modal-thanks__dialog {
     max-width: 36.36rem;
     padding: 2.357rem 3.5rem 1.928rem;
     position: relative;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
     color: #fff; }
-  .modal__close {
+  .modal__close, .modal-thanks__close {
     position: absolute;
     right: 0;
     top: 0;
@@ -926,24 +963,30 @@ img {
     border: none;
     margin: 12px;
     cursor: pointer; }
-  .modal__title {
+  .modal__title, .modal-thanks__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
     text-align: center;
     margin: 0 0 2.428rem 0; }
-  .modal__form {
+  .modal__form, .modal-thanks__form {
     display: flex;
     flex-direction: column; }
-  .modal__input-group {
+  .modal__input-group, .modal-thanks__input-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem; }
-  .modal__input:last-of-type {
+  .modal__input:last-of-type, .modal-thanks__input:last-of-type {
     margin-bottom: 1rem; }
-  .modal__policy {
+  .modal__policy, .modal-thanks__policy {
     margin-bottom: 2.7rem; }
-  .modal__button {
+  .modal__button, .modal-thanks__button {
     align-self: flex-end; }
+
+.modal-thanks__title {
+  margin-bottom: 0; }
+
+.modal-thanks__dialog {
+  padding: 3rem 3rem; }
 
 @media screen and (max-width: 1240px) {
   .nav__item {
@@ -1318,3 +1361,33 @@ img {
   .video__play {
     width: 5.2rem;
     height: 5.2rem; } }
+
+@media screen and (max-height: 545px) {
+  .modal__title {
+    font-size: 1rem;
+    max-width: 20rem;
+    margin: auto;
+    margin-bottom: 1rem; }
+  .modal__dialog {
+    padding: 1.5rem 3rem 0.7rem; }
+  .modal__policy {
+    margin-bottom: 2rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 0.6rem; }
+  .modal__input-group {
+    margin-bottom: 1rem; }
+  #modalCheckbox-error {
+    position: absolute;
+    left: 11%;
+    top: 83%;
+    font-size: 0.8rem; }
+  span .invalid {
+    font-size: 0.8rem; } }
+
+@media screen and (max-height: 345px) {
+  .modal__title {
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem; }
+  .modal__dialog {
+    padding: 1rem 1rem 0.5rem;
+    min-width: 27rem; } }

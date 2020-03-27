@@ -1,8 +1,9 @@
 $(document).ready(function () {
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
-      closeBtn = $('.modal__close');
-
+      closeBtn = $('.modal__close'),
+      modalThanks = $('.modal-thanks');
+// Для модального окна
   modalBtn.on('click', function () {
     modal.addClass('modal--visible');
   });
@@ -23,6 +24,27 @@ $(document).ready(function () {
       modal.removeClass('modal--visible');
     };
   })
+// для окна благодарности
+modalBtn.on('click', function () {
+  modalThanks.addClass('modal-thanks--visible');
+});
+closeBtn.on('click', function () {
+  modalThanks.removeClass('modal-thanks--visible');
+});
+
+$(document).mouseup(function (e){
+  var div = $(".modal__dialog");
+  if (!div.is(e.target)
+      && div.has(e.target).length === 0) {
+    modalThanks.removeClass('modal-thanks--visible');
+  };
+}); 
+
+document.addEventListener('keyup', function (e) {
+  if (e.key === 'Escape') {
+    modalThanks.removeClass('modal-thanks--visible');
+  };
+})
 
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
@@ -85,13 +107,13 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          modalThanks.addClass('modal-thanks--visible')
           $(form)[0].reset();
           modal.removeClass('modal--visible')
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
-          alert('Извините произошла ошибка :(');
+          alert('Извините, произошла ошибка :(');
           $(form)[0].reset();
           modal.removeClass('modal--visible')
         }
@@ -129,13 +151,13 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          modalThanks.addClass('modal-thanks--visible')
           $(form)[0].reset();
           modal.removeClass('modal--visible')
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
-          alert('Извините произошла ошибка :(');
+          alert('Извините, произошла ошибка :(');
           $(form)[0].reset();
           modal.removeClass('modal--visible')
         }
@@ -175,13 +197,13 @@ $(document).ready(function () {
         data: $(form).serialize(),
         success: function (response) {
           console.log('Ajax сработал. Ответ сервера: ' + response);
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          modalThanks.addClass('modal-thanks--visible')
           $(form)[0].reset();
           modal.removeClass('modal--visible')
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
-          alert('Извините произошла ошибка :(');
+          alert('Извините, произошла ошибка :(');
           $(form)[0].reset();
           modal.removeClass('modal--visible')
         }
@@ -225,4 +247,34 @@ $(document).ready(function () {
     myMap.geoObjects
         .add(myPlacemark);
 });
+
+var target = $('.types');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+var btnUp = $('.button__scroll-up');
+$(window).scroll(function(){
+  var winScrollTop = $(this).scrollTop();
+  if(winScrollTop > scrollToElem){
+    btnUp.addClass('button__scroll-up--fixed')
+    btnUp.removeClass('button__scroll-up');
+  }
+});
+var target2 = $('.control');
+var targetPos2 = target2.offset().top;
+var winHeight2 = $(window).height();
+var scrollToElem2 = targetPos2 - winHeight2;
+var btnUp2 = $('.button__scroll-up--fixed');
+$(window).scroll(function(){
+  var winScrollTop2 = $(this).scrollTop();
+  if(winScrollTop2 > scrollToElem2){
+    btnUp2.removeClass('button__scroll-up--fixed');
+    btnUp2.addClass('button__scroll-up')
+  }
+});
+
+btnUp.on('click', function () {
+  btnUp.addClass('button__scroll-up');
+  btnUp.removeClass('button__scroll-up--fixed')
+})
 });

@@ -80,3 +80,34 @@ span
   position: relative
 #container
   width: 100%
+  position: relative
+
+.control__scroll-up
+    font-family: 'Yeseva One', sans-serif
+    font-size: 0.9rem
+    position: relative
+    width: 10rem
+    display: flex
+    justify-content: center
+    align-items: center
+    left: 0
+    bottom: 0
+    min-width: 10rem
+    min-height: 4rem
+    background-color: $black
+    text-transform: uppercase
+    text-decoration: none
+    color: $light
+    z-index: 3
+.button__scroll-up
+    position: absolute
+    margin-top: -8rem
+    width: 10rem
+    opacity: 0
+    visibility: hidden
+.button__scroll-up--fixed
+  position: fixed
+  left: -3%
+  top: 50%
+  transform: rotate(90deg)
+  z-index: 999
